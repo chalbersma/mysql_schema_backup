@@ -1,0 +1,10 @@
+# dbcompare_log_rotate
+# File for DBCompare's Logrotation.
+
+/opt/dbcompare_code/dbcompare.log {
+    daily
+    rotate 15
+    missingok
+    compress
+    create 0664 mysql mysql
+}
